@@ -52,7 +52,9 @@ public class Playsong extends AppCompatActivity {
         textView.setText(textcontent);
         textView.setSelected(true);
         position = intent.getIntExtra("position",0);
-
+        
+        //Seekbar Code
+        
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -86,7 +88,9 @@ public class Playsong extends AppCompatActivity {
             }
         };
         updateseek.start();
-
+        
+       // Onclick Listener on play,previous,next buttons
+        
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
